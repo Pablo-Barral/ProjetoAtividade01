@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Login</title>
 </head>
 <body>
     <main>
-        <div id="containerEsquerda">
-            <h1>Olá,</h1>
-            <p>Para continuar navegando de forma segura, efetue o login na rede.</p>
-            <h2>Login</h2>
-            <div id="caixaUsuario">
-                <input type="text" placeholder="Usuário">
-                <img src="/assets/user.png" alt="ícone usuário">
+        <section id="loginPage">
+            <div id="containerLeft">
+                <div id="greeting">
+                    <h1>Olá,</h1>
+                    <p>Para continuar navegando de forma segura, efetue o login na rede.</p>
+                </div>
+                <div id="loginBox">
+                    <h2>Login</h2>
+                    <div id="userBox">
+                        <input type="text" placeholder="Usuário">
+                        <img src="/assets/user.png" alt="ícone usuário">
+                    </div>
+                    <div id="passwordBox">
+                        <input type="password" placeholder="Senha">
+                        <img src="/assets/lock.png" alt="ícone senha">
+                    </div>
+                    <button>Continuar</button>
+                </div>
             </div>
-            <div id="caixaSenha">
-                <input type="password" placeholder="Senha">
-                <img src="/assets/lock.png" alt="ícone senha">
+            <div id="containerRight">
+                <div id="logoCompassoWhite">
+                    <img  src="/assets/Logo-Compasso-Branco-hor 1.png" alt="Logo compasso">
+                </div>
             </div>
-            <button>Continuar</button>
-        </div>
-        <div id="containerDireita">
-            <img src="/assets/image 2.png" alt="Imagem">
-            <img src="/assets/Logo-Compasso-Branco-hor 1.png" alt="Logo compasso">
-        </div>
+        </section>
+
+
+        
+        <section id="homePage"></section>
     </main>
 </body>
 <script type="module" src="index.js"></script>

@@ -1,0 +1,117 @@
+#loginPage{
+    display: flex;
+}
+
+#containerLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+    box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+    color: #E0E0E0;
+
+    height: 100vh;
+    width: 50%;
+}
+
+#greeting{
+    width: 40%;
+    margin-bottom: 12.5%;
+}
+
+#greeting h1{
+    font-weight: bold;
+    font-size: 3.5em;
+    margin: 17px 0;
+}
+
+#greeting p{
+    font-size: 1.1em;
+}
+
+
+#loginBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#loginBox h2{
+    font-size: 2em;
+    font-weight: 550;
+    margin-bottom: 3.06%;
+}
+
+#loginBox input{
+    background-color: transparent;
+    border-radius: 50px;
+    height: 60px;
+    width: 90%;
+    font-size: 1.2em;
+    border: solid 1px #E0E0E0;
+    color: #E0E0E0;
+    padding-left: 20px;
+    margin: 3.05% 5px;
+}
+
+#loginBox input:focus{
+    outline-width: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #E0E0E0;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #E0E0E0;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #E0E0E0;
+  }
+
+#loginBox img{
+    width: 20px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 13px;
+}
+
+#loginBox button{
+    background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    color: #E0E0E0;
+    border: 0;
+    height: 67px;
+    font-size: 1.2em;
+    margin-top: 25%;
+    font-weight: bold;
+}
+
+
+/* Right Side */
+
+
+#containerRight{
+    background-image: url('../assets/login.png');
+
+    width: 50%;
+    height: 100vh;
+}
+
+#logoCompassoWhite{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.25%;
+}
+
+#logoCompassoWhite img{
+    width: 35%;
+}
