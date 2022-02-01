@@ -1,0 +1,17 @@
+
+.loginError{
+    border: solid 1px #E9B425;
+}
+
+#msgError{
+    text-align: center;
+    color: #E9B425;
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.msgErrorInvisible{
+    visibility: hidden;
+}
+

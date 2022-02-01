@@ -5,7 +5,7 @@
 #containerLeft{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
@@ -17,8 +17,7 @@
 }
 
 #greeting{
-    width: 40%;
-    margin-bottom: 12.5%;
+    width: 50%;
 }
 
 #greeting h1{
@@ -35,19 +34,18 @@
 #loginBox{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     width: 50%;
     position: relative;
-    margin-bottom: 5%;
+    height: 50%;
 }
 
 #loginBox h2{
     font-size: 2em;
     font-weight: 550;
-    margin-bottom: 3.06%;
 }
 
-#loginBox input{
+.loginBoxInput{
     background-color: transparent;
     border-radius: 50px;
     height: 60px;
@@ -56,11 +54,14 @@
     border: solid 1px #E0E0E0;
     color: #E0E0E0;
     padding-left: 20px;
-    margin: 3.05% 5px;
 }
 
-#loginBox input:focus{
+#loginBoxInput:focus{
     outline-width: 0;
+}
+
+.inputBox{
+    position: relative;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -76,11 +77,21 @@
     color: #E0E0E0;
   }
 
-#loginBox img{
+.loginBoxImg{
     width: 20px;
     position: absolute;
-    margin-top: 40px;
-    margin-left: 13px;
+    top: 40%;
+    right: 8%;
+}
+
+#msgErrorBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#msgError{
+    width: 80%;
 }
 
 #loginBox button{
@@ -89,11 +100,11 @@
     border-radius: 50px;
     color: #E0E0E0;
     border: 0;
-    height: 67px;
+    height: 15%;
     font-size: 1.2em;
-    margin-top: 25%;
     font-weight: bold;
 }
+
 
 
 /* Right Side */

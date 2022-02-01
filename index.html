@@ -17,13 +17,18 @@
                 </div>
                 <div id="loginBox">
                     <h2>Login</h2>
-                    <div id="userBox">
-                        <input type="text" placeholder="Usuário">
-                        <img src="/assets/user.png" alt="ícone usuário">
+                    <div id="userBox" class="inputBox">
+                        <input type="text" placeholder="Usuário" class="loginBoxInput">
+                        <img src="/assets/user.png" alt="ícone usuário" class="loginBoxImg">
                     </div>
-                    <div id="passwordBox">
-                        <input type="password" placeholder="Senha">
-                        <img src="/assets/lock.png" alt="ícone senha">
+                    <div id="passwordBox" class="inputBox">
+                        <input type="password" placeholder="Senha" class="loginBoxInput">
+                        <img src="/assets/lock.png" alt="ícone senha" class="loginBoxImg">
+                    </div>
+                    <div id="msgErrorBox">
+                        <div id="msgError">
+                            <p class="msgErrorInvisible">Ops, usuário ou senha inválidos. Tente novamente.</p>
+                        </div>
                     </div>
                     <button>Continuar</button>
                 </div>
@@ -37,7 +42,9 @@
 
 
         
-        <section id="homePage"></section>
+        <section id="homePage">
+            <h1>teste</h1>
+        </section>
     </main>
 </body>
 <script type="module" src="index.js"></script>
