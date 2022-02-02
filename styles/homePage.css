@@ -1,5 +1,8 @@
-#header{
-    margin: 1% 0;
-    display: flex;
-    justify-content: space-between;
+#homePage {
+  height: 100vh;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
 }
