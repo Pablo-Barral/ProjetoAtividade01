@@ -1,3 +1,6 @@
+import regionShort from "./regionShort.js";
+import weatherIcon from "./weatherIcon.js";
+
 export default function weather() {
   const locationShow = document.querySelector("#location");
   const weatherIconShow = document.querySelector("#weatherIcon img");
@@ -11,12 +14,17 @@ export default function weather() {
       const parser = new DOMParser();
       const xml = parser.parseFromString(data, "application/xml");
       console.log(xml);
-      console.log(xml.querySelector("temp_c"));
 
       const location = xml.querySelector("name");
-      locationShow.innerHTML = location.innerHTML + " - ";
+      const region = xml.querySelector("region");
 
-      const icon = xml.querySelector("icon");
+      const regionShow = regionShort(region);
+
+      locationShow.innerHTML = location.innerHTML + " - " + regionShow;
+
+      let icon = xml.querySelector("icon");
+      const id = xml.querySelector("condition text");
+      icon = weatherIcon(icon, id);
       weatherIconShow.src = icon.innerHTML;
 
       const temperature = xml.querySelector("temp_c");
