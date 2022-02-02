@@ -1,4 +1,5 @@
-import login from './modules/login.js'
-import loginError from './modules/loginError.js'
+import login from "./modules/login.js";
+import clock from "./modules/clock.js";
 
-login()
+login();
+setInterval(clock, 100);
