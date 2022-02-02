@@ -1,0 +1,14 @@
+#timeClock {
+  color: #222222;
+  text-align: center;
+}
+
+#time {
+  font-size: 10em;
+  font-weight: 700;
+}
+
+#date {
+  font-size: 1em;
+  font-weight: 700;
+}
