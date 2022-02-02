@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/iconsite.png" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Compass First Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section id="loginPage">
-            <div id="containerLeft">
-                <div id="greeting">
-                    <h1>Olá,</h1>
-                    <p>Para continuar navegando de forma <br> segura, efetue o login na rede.</p>
-                </div>
-                <div id="loginBox">
-                    <h2>Login</h2>
-                    <div id="userBox" class="inputBox">
-                        <input type="text" placeholder="Usuário" class="loginBoxInput">
-                        <img src="./assets/user.png" alt="ícone usuário" class="loginBoxImg">
-                    </div>
-                    <div id="passwordBox" class="inputBox">
-                        <input type="password" placeholder="Senha" class="loginBoxInput">
-                        <img src="./assets/lock.png" alt="ícone senha" class="loginBoxImg">
-                    </div>
-                    <div id="msgErrorBox">
-                        <div id="msgError">
-                            <p class="msgErrorInvisible">Ops, usuário ou senha inválidos. <br>Tente novamente.</p>
-                        </div>
-                    </div>
-                    <button>Continuar</button>
-                </div>
+      <section id="loginPage">
+        <div id="containerLeft">
+          <div id="greeting">
+            <h1>Olá,</h1>
+            <p>
+              Para continuar navegando de forma <br />
+              segura, efetue o login na rede.
+            </p>
+          </div>
+          <div id="loginBox">
+            <h2>Login</h2>
+            <div id="userBox" class="inputBox">
+              <input type="text" placeholder="Usuário" class="loginBoxInput" />
+              <img
+                src="./assets/user.png"
+                alt="ícone usuário"
+                class="loginBoxImg"
+              />
             </div>
-            <div id="containerRight">
-                <div id="logoCompassoWhite">
-                    <img  src="./assets/Logo-Compasso-Branco-hor 1.png" alt="Logo compasso">
-                </div>
+            <div id="passwordBox" class="inputBox">
+              <input
+                type="password"
+                placeholder="Senha"
+                class="loginBoxInput"
+              />
+              <img
+                src="./assets/lock.png"
+                alt="ícone senha"
+                class="loginBoxImg"
+              />
             </div>
-        </section>
-
-
-        
-        <section id="homePage">
-            <div id="header">
-                <div id="logoCompasso">
-                    <img src="./assets/LogoCompasso 1.png" alt="Logo Compasso">
-                </div>
-                <div id="timeClock">
-                    <div id="time">
-
-                    </div>
-                    <div id="date">
-
-                    </div>
-
-                </div>
-                <div id="weather">
-
-                </div>
+            <div id="msgErrorBox">
+              <div id="msgError">
+                <p class="msgErrorInvisible">
+                  Ops, usuário ou senha inválidos. <br />Tente novamente.
+                </p>
+              </div>
             </div>
+            <button>Continuar</button>
+          </div>
+        </div>
+        <div id="containerRight">
+          <div id="logoCompassoWhite">
+            <img
+              src="./assets/Logo-Compasso-Branco-hor 1.png"
+              alt="Logo compasso"
+            />
+          </div>
+        </div>
+      </section>
 
-            <div id="containerHome">
-
+      <section id="homePage">
+        <div id="header">
+          <div id="logoCompasso">
+            <img src="./assets/LogoCompasso 1.png" alt="Logo Compasso" />
+          </div>
+          <div id="timeClock">
+            <div id="time"></div>
+            <div id="date"></div>
+          </div>
+          <div id="weather">
+            <div id="location"></div>
+            <div id="weatherIcon">
+              <img src="" alt="Icone clima" />
             </div>
+            <div id="temperature"></div>
+          </div>
+        </div>
 
-            <div id="footer">
+        <div id="containerHome"></div>
 
-            </div>
-        </section>
+        <div id="footer"></div>
+      </section>
     </main>
-</body>
-<script type="module" src="index.js"></script>
+  </body>
+  <script type="module" src="index.js"></script>
 </html>
