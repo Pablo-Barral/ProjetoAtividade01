@@ -13,7 +13,6 @@ export default function weather() {
     .then((data) => {
       const parser = new DOMParser();
       const xml = parser.parseFromString(data, "application/xml");
-      console.log(xml);
 
       const location = xml.querySelector("name");
       const region = xml.querySelector("region");
