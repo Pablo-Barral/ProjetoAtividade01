@@ -11,7 +11,7 @@
 #footer {
   position: relative;
   display: grid;
-  grid-template-columns: 15.6% 28.6% 7.8% 5.7% 1.8% 19.2% 6.7% 7%;
+  grid-template-columns: 15.6% 28.6% 7.8% 5.5% 5% 24.5% 7% 6%;
   background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
   height: 100px;
   font-size: 0.7em;
@@ -46,11 +46,11 @@
   align-items: center;
 }
 #timeoutTimer {
-  font-size: 1.5em;
+  font-size: 3.5em;
   font-weight: bold;
 }
 #msgContinue {
-  grid-column: 8;
+  grid-column: 7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@
   font-weight: 800;
 }
 #logout {
-  grid-column: 9;
+  grid-column: 8;
   background-color: transparent;
   font-weight: bold;
   border: 0;
