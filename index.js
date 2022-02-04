@@ -7,7 +7,7 @@ import passSpace from "./modules/passSpace.js";
 history.pushState(
   null,
   "Home - First Project",
-  "http://127.0.0.1:5500/index.html/login"
+  "https://pablo-barral.github.io/ProjetoAtividade01/login"
 );
 login();
 passSpace();
