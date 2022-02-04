@@ -16,7 +16,7 @@ export default function login() {
       history.pushState(
         null,
         "Home - First Project",
-        "https://pablo-barral.github.io/ProjetoAtividade01/home"
+        "http://127.0.0.1:5500/index.html/home"
       );
       timeout();
     } else {

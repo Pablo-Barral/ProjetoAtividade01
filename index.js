@@ -6,7 +6,7 @@ import logout from "./modules/logout.js";
 history.pushState(
   null,
   "Home - First Project",
-  "https://pablo-barral.github.io/ProjetoAtividade01/login"
+  "http://127.0.0.1:5500/index.html/login"
 );
 login();
 logout();

@@ -5,7 +5,7 @@ export default function logout() {
     history.pushState(
       null,
       "Login - First Project",
-      "https://pablo-barral.github.io/ProjetoAtividade01/"
+      "http://127.0.0.1:5500/index.html"
     );
     window.location.reload();
   });
