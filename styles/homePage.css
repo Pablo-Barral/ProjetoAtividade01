@@ -35,6 +35,12 @@
   text-align: right;
 }
 
+#firstParagraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 #homeParagraphBox h2 {
   color: #c12d18;
   font-size: 1.5em;
