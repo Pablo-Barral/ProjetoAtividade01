@@ -1,6 +1,6 @@
 export default function timeout() {
   const timer = document.querySelector("#timeoutTimer");
-  let timeCount = 20;
+  let timeCount = 600;
   setInterval(() => {
     timer.innerHTML = timeCount;
     timeCount--;
