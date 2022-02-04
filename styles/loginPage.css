@@ -1,55 +1,50 @@
 /* Left side */
 
-#loginPage{
-    display: flex;
+#loginPage {
+  display: flex;
 }
 
-#containerLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+#containerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
-    box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
-    color: #E0E0E0;
+  background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+  box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+  color: #e0e0e0;
 
-    height: 100vh;
-    width: 50%;
+  height: 100vh;
+  width: 50%;
 }
 
-#greeting{
-    width: 50%;
+#greeting {
+  width: 50%;
+  position: relative;
+  top: 7%;
 }
 
-#greeting h1{
-    font-weight: bold;
-    font-size: 3.5em;
-    margin: 17px 0;
+#greeting h1 {
+  font-weight: 500;
+  font-size: 3.5em;
+  margin: 17px 0;
 }
-
-#greeting p{
-    font-size: 1.1em;
-}
-
-
 
 /* Right Side */
 
+#containerRight {
+  background-image: url("../assets/login.png");
 
-#containerRight{
-    background-image: url('../assets/login.png');
-
-    width: 50%;
-    height: 100vh;
+  width: 50%;
+  height: 100vh;
 }
 
-#logoCompassoWhite{
-    display: flex;
-    justify-content: center;
-    margin-top: 3.25%;
+#logoCompassoWhite {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.25%;
 }
 
-#logoCompassoWhite img{
-    width: 35%;
+#logoCompassoWhite img {
+  width: 35%;
 }
