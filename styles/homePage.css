@@ -1,6 +1,7 @@
 #homePage {
   height: 100vh;
   display: none;
+  background: linear-gradient(105.96deg, #ffffff 0%, #f0f0f0 97.86%);
 }
 
 #header {
