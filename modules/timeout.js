@@ -8,7 +8,7 @@ export default function timeout() {
       history.pushState(
         null,
         "Login - First Project",
-        "http://127.0.0.1:5500/index.html"
+        "https://pablo-barral.github.io/ProjetoAtividade01/"
       );
       window.location.reload();
     }
