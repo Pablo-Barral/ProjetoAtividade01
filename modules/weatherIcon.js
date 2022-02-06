@@ -1,5 +1,7 @@
 export default function weatherIcon(icon, id) {
-  if (id.innerHTML.includes("thunder")) {
+  if (id.innerHTML.includes("thunder") && id.includes("rain")) {
+    icon.innerHTML = "./assets/storm.png";
+  } else if (id.innerHTML.includes("thunder")) {
     icon.innerHTML = "./assets/thunder.png";
   } else if (id.innerHTML.includes("rain")) {
     icon.innerHTML = "./assets/raining.png";
@@ -12,8 +14,6 @@ export default function weatherIcon(icon, id) {
     icon.innerHTML = "./assets/cloudy.png";
   } else if (id.innerHTML.includes("Sunny")) {
     icon.innerHTML = "./assets/sun.png";
-  } else if (id.innerHTML.includes("thunder") && id.includes("rain")) {
-    icon.innerHTML = "./assets/storm.png";
   }
   return icon;
 }
