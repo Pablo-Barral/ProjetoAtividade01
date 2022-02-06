@@ -24,7 +24,7 @@
   box-sizing: border-box;
 }
 
-#loginBoxInput:focus {
+.loginBoxInput:focus {
   outline-width: 0;
 }
 
