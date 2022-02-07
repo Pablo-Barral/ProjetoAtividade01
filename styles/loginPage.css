@@ -42,9 +42,23 @@
 #logoCompassoWhite {
   display: flex;
   justify-content: center;
-  margin-top: 3.25%;
+  position: relative;
+  top: 3%;
 }
 
 #logoCompassoWhite img {
-  width: 35%;
+  width: 40%;
+}
+
+#logoCompassoWhiteResponsive{
+  visibility: hidden;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+}
+
+#logoCompassoWhiteResponsive img{
+  width: 70%;
 }

@@ -7,7 +7,10 @@
 #header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  position: relative;
+  left: 1%;
+  top: 1%;
+  width: 99%;
 }
 
 #containerHome {
