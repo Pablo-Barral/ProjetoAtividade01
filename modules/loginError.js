@@ -9,4 +9,5 @@ export default function loginError(){
 
     user.value = ""
     password.value = ""
+    password.classList.remove("passSpace")
 }
