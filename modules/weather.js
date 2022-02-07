@@ -26,8 +26,9 @@ export default function weather() {
       icon = weatherIcon(icon, id);
       weatherIconShow.src = icon.innerHTML;
 
-      const temperature = xml.querySelector("temp_c");
-      temperatureShow.innerHTML = temperature.innerHTML + "°";
+      let temperature = xml.querySelector("temp_c");
+      temperature = parseFloat(temperature.innerHTML).toFixed(0)
+      temperatureShow.innerHTML = temperature + "°";
     })
     .catch(console.error);
 }
