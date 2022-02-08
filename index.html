@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css" />
     <title>Login - First Project</title>
   </head>
-  <body>
+  <body onselectstart = "return false">
     <main>
       <section id="loginPage">
         <div id="containerLeft">
@@ -27,6 +27,7 @@
                 src="./assets/user.png"
                 alt="ícone usuário"
                 class="loginBoxImg"
+                draggable="false"
               />
             </div>
             <div id="passwordBox" class="inputBox">
@@ -39,6 +40,7 @@
                 src="./assets/lock.png"
                 alt="ícone senha"
                 class="loginBoxImg"
+                draggable="false"
               />
             </div>
             <div id="msgErrorBox">
@@ -56,6 +58,7 @@
             <img
               src="./assets/Logo-Compasso-Branco-hor 1.png"
               alt="Logo compasso"
+              draggable="false"
             />
           </div>
         </div>
@@ -63,13 +66,14 @@
           <img
             src="./assets/Logo-Compasso-Branco-hor 1.png"
             alt="Logo compasso"
+            draggable="false"
           />
       </section>
 
       <section id="homePage">
         <div id="header">
           <div id="logoCompasso">
-            <img src="./assets/LogoCompasso 1.png" alt="Logo Compasso" />
+            <img src="./assets/LogoCompasso 1.png" alt="Logo Compasso" draggable="false" />
           </div>
           <div id="timeClock">
             <div id="time"></div>
@@ -79,7 +83,7 @@
             <div id="location"></div>
             <div id="weatherData">
               <div id="weatherIcon">
-                <img src="" alt="Icone clima" />
+                <img src="" alt="Icone clima" draggable="false" />
               </div>
               <div id="temperature"></div>
             </div>
@@ -91,6 +95,7 @@
             <img
               src="./assets/bola-LogoCompasso 1.png"
               alt="Bola logo Compasso"
+              draggable="false"
             />
           </div>
           <div id="homeParagraphBox">
