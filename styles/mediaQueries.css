@@ -62,101 +62,95 @@
 }
 
 @media (max-width: 960px){
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  #containerLeft{
+    width: 100%;
+  }
+  #containerRight{
+    width: 0%;
+  }
+  #greeting{
+    width: 80%;
+  }
+  #loginBox{
+    width: 80%;
+  }
+  #logoCompassoWhiteResponsive{
+    visibility: visible;
+  }
+
+
+  #header{
+    display: block;
+  }
+  #logoCompasso{
+    width: 100%;
+  }
+  #logoCompasso img{
+    width: 250px;
+  }
+  #timeClock{
+    display: none;
+  }
+  #weather{
+    display: none;
+  }
+
   #homeImg {
-    width: 300px;
-    height: 60%;
+    position: absolute;
+    bottom: -15%;
+    left: -5%;
+    width: 500px;
+    height: 100%;
   }
-  #homeParagraphBox {
-    height: 45%;
-    bottom: 20%;
-    font-size: 1em;
-    width: 50%;
-  }
-  #footer{
-    grid-template-columns: 15.6% 28.6% 5.8% 8.5% 5% 15.5% 10% 10%;
+  #homeParagraphBox{
+    display: none;
   }
 
-  @media (max-width: 750px){
-    body{
-      overflow-y: hidden;
-      overflow-x: hidden;
-    }
-    #containerLeft{
-      width: 100%;
-    }
-    #containerRight{
-      width: 0%;
-    }
-    #greeting{
-      width: 80%;
-    }
-    #loginBox{
-      width: 80%;
-    }
-    #logoCompassoWhiteResponsive{
-      visibility: visible;
-    }
 
 
-    #header{
-      display: block;
-    }
-    #logoCompasso{
-      width: 100%;
-    }
-    #logoCompasso img{
-      width: 50%;
-    }
-    #timeClock{
-      display: none;
-    }
-    #weather{
-      display: none;
-    }
+  #footer {
+    grid-template-columns: 25% 75%;
+    font-size: 0.7em;
+  }
+  
+  #msgFooter {
+    display: none;
+  }
+  #verticalLine {
+    display: none;
+  }
+  #msgRefresh {
+    display: none;
+  }
+  #timerBox {
+    display: none;
+  }
+  #msgContinue {
+    grid-column: 2;
+    font-size: 1.6em;
+    font-weight: 590;
+  }
+  #logout {
+    grid-column: 1;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}
 
+  @media (max-width: 500px){
     #homeImg {
       position: absolute;
       bottom: -15%;
       left: -5%;
-      width: 100%;
+      width: 350px;
       height: 100%;
     }
-    #homeParagraphBox{
-      display: none;
-    }
-
-
-
-    #footer {
-      grid-template-columns: 25% 75%;
-      font-size: 0.7em;
-    }
-    
-    #msgFooter {
-      display: none;
-    }
-    #verticalLine {
-      display: none;
-    }
-    #msgRefresh {
-      display: none;
-    }
-    #timerBox {
-      display: none;
-    }
-    #msgContinue {
-      grid-column: 2;
-      font-size: 1.6em;
-      font-weight: 590;
-    }
-    #logout {
-      grid-column: 1;
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: 25%;
-      font-size: 1.2em;
-      font-weight: 600;
-    }
-  }
 }
