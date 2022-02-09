@@ -1,7 +1,7 @@
 export default function regionShort(region) {
   let regionShow = "";
 
-  switch (region.innerHTML) {
+  switch (region) {
     case "Acre":
       regionShow = "AC";
       break;

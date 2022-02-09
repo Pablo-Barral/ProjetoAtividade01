@@ -1,19 +1,19 @@
 export default function weatherIcon(icon, id) {
-  if (id.innerHTML.includes("thunder") && id.includes("rain")) {
-    icon.innerHTML = "./assets/storm.png";
-  } else if (id.innerHTML.includes("thunder")) {
-    icon.innerHTML = "./assets/thunder.png";
-  } else if (id.innerHTML.includes("rain")) {
-    icon.innerHTML = "./assets/raining.png";
-  } else if (id.innerHTML.includes("Fog") || id.innerHTML.includes("Mist")) {
-    icon.innerHTML = "./assets/cloud.png";
+  if (id.includes("thunder") && id.includes("rain")) {
+    icon = "./assets/storm.png";
+  } else if (id.includes("thunder")) {
+    icon = "./assets/thunder.png";
+  } else if (id.includes("rain")) {
+    icon = "./assets/raining.png";
+  } else if (id.includes("Fog") || id.includes("Mist")) {
+    icon = "./assets/cloud.png";
   } else if (
-    id.innerHTML.includes("Cloudy") ||
-    id.innerHTML.includes("Overcast")
+    id.includes("Cloudy") ||
+    id.includes("Overcast")
   ) {
-    icon.innerHTML = "./assets/cloudy.png";
-  } else if (id.innerHTML.includes("Sunny")) {
-    icon.innerHTML = "./assets/sun.png";
+    icon = "./assets/cloudy.png";
+  } else if (id.includes("Sunny")) {
+    icon = "./assets/sun.png";
   }
   return icon;
 }

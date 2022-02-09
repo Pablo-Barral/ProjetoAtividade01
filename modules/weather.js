@@ -7,27 +7,25 @@ export default function weather() {
   const temperatureShow = document.querySelector("#temperature");
 
   fetch(
-    "https://api.weatherapi.com/v1/current.xml?key=288ce9269f9c46699a1185755220202&q=Juiz-de-Fora"
+    "https://api.weatherapi.com/v1/current.json?key=288ce9269f9c46699a1185755220202&q=Juiz-de-Fora"
   )
-    .then((response) => response.text())
+    .then((response) => response.json())
     .then((data) => {
-      const parser = new DOMParser();
-      const xml = parser.parseFromString(data, "application/xml");
 
-      const location = xml.querySelector("name");
-      const region = xml.querySelector("region");
+      const location = data.location.name;
+      const region = data.location.region;
 
       const regionShow = regionShort(region);
 
-      locationShow.innerHTML = location.innerHTML + " - " + regionShow;
+      locationShow.innerHTML = location + " - " + regionShow;
 
-      let icon = xml.querySelector("icon");
-      const id = xml.querySelector("condition text");
+      let icon = data.current.condition.icon;
+      const id = data.current.condition.text;
       icon = weatherIcon(icon, id);
-      weatherIconShow.src = icon.innerHTML;
+      weatherIconShow.src = icon;
 
-      let temperature = xml.querySelector("temp_c");
-      temperature = parseFloat(temperature.innerHTML).toFixed(0)
+      let temperature = data.current.temp_c;
+      temperature = temperature.toFixed(0)
       temperatureShow.innerHTML = temperature + "°";
     })
     .catch(console.error);
