@@ -11,7 +11,7 @@ export default function clock() {
   const dateShow = document.querySelector("#date");
 
   let weekDayShow = "";
-  let monthDayShow = "";
+  let monthShow = "";
 
   if (hour < 10) {
     hour = "0" + hour;
@@ -54,47 +54,47 @@ export default function clock() {
       break;
   }
 
-  switch (monthDay) {
+  switch (month) {
     case 1:
-      monthDayShow = "janeiro";
+      monthShow = "janeiro";
       break;
     case 2:
-      monthDayShow = "fevereiro";
+      monthShow = "fevereiro";
       break;
     case 3:
-      monthDayShow = "março";
+      monthShow = "março";
       break;
     case 4:
-      monthDayShow = "abril";
+      monthShow = "abril";
       break;
     case 5:
-      monthDayShow = "maio";
+      monthShow = "maio";
       break;
     case 6:
-      monthDayShow = "junho";
+      monthShow = "junho";
       break;
     case 7:
-      monthDayShow = "julho";
+      monthShow = "julho";
       break;
     case 8:
-      monthDayShow = "agosto";
+      monthShow = "agosto";
       break;
     case 9:
-      monthDayShow = "setembro";
+      monthShow = "setembro";
       break;
     case 10:
-      monthDayShow = "outubro";
+      monthShow = "outubro";
       break;
     case 11:
-      monthDayShow = "novembro";
+      monthShow = "novembro";
       break;
     case 12:
-      monthDayShow = "dezembro";
+      monthShow = "dezembro";
     default:
-      monthDayShow = "";
+      monthShow = "";
   }
 
   time.innerHTML = hour + ":" + minute;
   dateShow.innerHTML =
-    weekDayShow + ", " + (month + 1) + " de " + monthDayShow + " de " + year;
+    weekDayShow + ", " + (monthDay) + " de " + monthShow + " de " + year;
 }

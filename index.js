@@ -14,4 +14,4 @@ passSpace();
 logout();
 setInterval(clock, 100);
 weather();
-setInterval(weather, 600000);
+setInterval(weather, 60000);
