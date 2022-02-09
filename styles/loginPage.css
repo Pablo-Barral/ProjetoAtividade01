@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: 3%;
+  top: 2%;
 }
 
 #logoCompassoWhite img {
@@ -61,5 +61,5 @@
 }
 
 #logoCompassoWhiteResponsive img{
-  width: 70%;
+  width: 60%;
 }
