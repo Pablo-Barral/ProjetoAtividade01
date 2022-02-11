@@ -4,11 +4,11 @@ import weather from "./modules/weather.js";
 import logout from "./modules/logout.js";
 import passSpace from "./modules/passSpace.js";
 
-history.pushState(
-  null,
-  "Home - First Project",
-  "https://pablo-barral.github.io/ProjetoAtividade01/login"
-);
+// history.pushState(
+//   null,
+//   "Home - First Project",
+//   "https://pablo-barral.github.io/ProjetoAtividade01/login"
+// );
 login();
 passSpace();
 logout();

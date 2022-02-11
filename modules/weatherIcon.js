@@ -3,7 +3,7 @@ export default function weatherIcon(icon, id) {
     icon = "./assets/storm.png";
   } else if (id.includes("thunder")) {
     icon = "./assets/thunder.png";
-  } else if (id.includes("rain")) {
+  } else if (id.includes("rain") || id.includes("drizzle")) {
     icon = "./assets/raining.png";
   } else if (id.includes("Fog") || id.includes("Mist")) {
     icon = "./assets/cloud.png";
